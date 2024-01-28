@@ -1,0 +1,351 @@
+body{
+  margin: 0;
+  background-image: url(images/fond.png);
+  background-position: center;
+  background-size: 50%;
+  font-family: Impact, serif;
+}
+
+.blanc{
+  background-color: rgba(255, 255, 255, 0.7);
+  margin-left: 5%;
+  margin-right: 5%;
+
+}
+
+nav{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.left{
+  display: flex;
+  margin-top: 20px;
+  margin-left: 10px;
+}
+
+.right{
+  display: flex;
+  margin-right: 10px;
+}
+
+ul{
+  list-style: none;
+}
+
+.dem{
+  color: green;   
+  font-size: large;
+}
+
+.garde{
+  font-weight: bold;
+}
+
+.devis{
+  display: flex;
+  background-color:rgb(0, 169, 177);
+  color: white;
+  font-weight: bold;
+  font-size: larger;
+  align-items: center;
+  padding: 15px;
+  height: 45px;
+  width: 100%;
+  border-radius: 3px;
+  margin-right: 10px;
+  margin-left: 43rem;
+}
+
+.numero{
+  display: flex;
+  background-color:green;
+  color: white;
+  font-weight: bold;
+  font-size: larger;
+  align-items: center;
+  padding: 15px;
+  border-radius: 3px;
+  height: 45px;
+  width: 100%;
+}
+
+.devis, .numero:hover{
+    cursor: pointer;
+}
+
+.banner{
+    display: inline-block;
+    list-style: none;
+    background-color: white;
+    text-align: right;
+    margin: 10px;
+}
+
+.banner ul{
+    float: left;
+    overflow: hidden;
+}
+
+.banner li{
+    display: inline-block;
+    text-transform: uppercase;
+    color: green;
+    border-right: 0.5px solid rgb(187, 187, 187);
+}
+
+.banner li a{
+    display: flex;
+    color: green;
+    text-decoration: none;
+    text-align: center;
+    padding: 10px;
+}
+
+.banner li a:hover{
+    color: white;
+    background-color: green;
+}
+
+.banner .attestataire{
+  color: grey;
+  display: flex;
+  text-transform: uppercase;
+  margin-right: 10px;
+  margin-left: 69.5rem;
+  padding-top: 15px;
+}
+
+.slider{
+  width: 100%;
+  position: relative;
+  height: 400px;
+  overflow: hidden;
+}
+
+.slider img{
+  width: 100%;
+  height: 400px;
+  margin: 0 10px;
+}
+
+.menu{
+  position: absolute;
+  left: 0;
+  z-index: 11;
+  width: 100%;
+  bottom: 0;
+  text-align: center;
+}
+
+.menu label{
+  cursor: pointer;
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  background: grey;
+  border-radius: 50px;
+  margin: 0 1em 1em;
+}
+
+.menu label:hover{
+  background: #ccc;
+}
+
+.slide-input{
+  display: none;
+}
+
+.slide-img{
+  width: 100%;
+  height: 400px;
+  position: absolute;
+  top: 0;
+  left: 100%;
+  z-index: 10;
+  transition: left 0s 0.75s;
+}
+
+[id^="slide"]:checked + .slide-img {
+  left: 0;
+  transition: left 0.65s ease-out;
+}
+
+.slider p{
+  position: inherit;
+  z-index: 12;
+  text-align: center;
+  margin-top: 120px;
+  color: white;
+}
+
+.slider button{
+  border-color: white;
+  color: white;
+  background: transparent;
+  border: 0.125rem solid #fff;
+  text-transform: uppercase;
+  text-align: center;
+  height: 45px;
+  cursor: pointer;
+  margin-top: 15px;
+}
+
+.slider button:hover{
+  font-size: 15px;
+  transition: 0.2s;
+}
+
+.legende{
+  color: grey;
+  margin: 5px 10px;
+  background: white;
+  padding: 7px 0;
+}
+
+.main table.contenu .lien{
+  width: 300px;
+  text-align: left;
+  vertical-align: top;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.lien li a{
+  text-decoration: none;
+  color: green;
+  padding: 10px;
+}
+
+.lien li{
+  background-color: white;
+  border: 0.5px solid rgb(187, 187, 187);
+  padding: 14px; 
+}
+
+.contact, .googlemap, .horaire{
+  padding-left: 35px;
+}
+
+.horaire .mail a{
+  text-decoration: none;
+  color: green;
+  cursor: pointer;
+}
+
+.horaire img, .mail img{
+  width: 13px;
+  height: 13px;
+  padding-right: 8px;
+}
+
+.activites{
+  font-family: Arial, Helvetica, sans-serif;
+  vertical-align: top;
+  text-align: justify;
+  padding: 0 20px 0 10px;
+}
+
+.carres{
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+}
+
+.carres .carre .texteC{
+  display: inline;
+  width: 100%;
+}
+
+.texteC img{
+  display: flex;
+  margin-left: 80px;
+  width: 40px;
+  height: 40px;
+}
+
+.carres .carre{
+  display: inline-flex;
+  border: 0.5px solid rgb(187, 187, 187);
+  margin: 20px;
+  width: 200px;
+  height: 200px;
+  text-align: center;
+  align-items: center;
+  margin-left: 50px;
+  padding: 20px;
+}
+
+p a{
+  text-decoration: none;
+  color: green;
+}
+
+.transports{
+  background-color: white;
+  padding: 30px 10px;
+}
+
+.transports img{
+  padding: 0 50px;
+}
+
+.commentaire{
+  border-left: 5px solid rgb(187, 187, 187);
+}
+
+.commentaire p{
+  padding: 15px;
+}
+
+.devis-dem{
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: aquamarine;
+  padding: 20px;
+  text-align: center;
+}
+
+.devis-dem button{
+  font-family: Impact, sans-serif;
+  color: white;
+  font-size: larger;
+  background-color: rgb(0, 169, 177);
+  padding: 10px;
+  border: none;
+  border-radius: 3px;
+}
+
+footer{
+  background-color: white;
+}
+
+.infos{
+  display: inline-flex;
+}
+
+.infos .info{
+  font-family: Arial, Helvetica, sans-serif;
+  display: inline-flex;
+  margin: 35px;
+  width: 30%;
+  text-align: left;
+}
+
+.texteI img{
+  display: inline-flex;
+  width: 15px;
+  height: 15px;
+  padding-right: 8px;
+}
+
+.credits{
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
+  padding: 20px;
+}
+
+
+
+
+
+
