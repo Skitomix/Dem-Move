@@ -1,5 +1,5 @@
 # Site déménagement DEM&CO
-> [voir la page] (https://Skitomix.github.io/Dem-Move/)
+> [voir la page] (https://github.com/Skitomix/Dem-Move)
 
 >Entrainement reproduction site
 
